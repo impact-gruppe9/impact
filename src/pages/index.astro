@@ -1,16 +1,21 @@
 ---
+import HeaderFooter from "../components/header-footer.astro";
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
+
+<HeaderFooter></HeaderFooter>
 
 <Layout>
 	<img class="hero_billede" src="/src/img/LOGO+png+red.webp" alt="">
 	<h1>MUSIC // ART // TALKS // WORKSHOP // FOOD <br> DESIGNED TO INCREASE OUR IMPACT</h1>
 	<a target="_blank" href="https://www.billetsalg.dk/Ticket/IMPACT%20FESTIVAL%202026/9545">TICKETS</a>
 </Layout>
+
 
 <style>
 	.hero_billede{
