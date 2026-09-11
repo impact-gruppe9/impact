@@ -7,5 +7,37 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<img class="hero_billede" src="/src/img/LOGO+png+red.webp" alt="">
+	<h1>MUSIC // ART // TALKS // WORKSHOP // FOOD <br> DESIGNED TO INCREASE OUR IMPACT</h1>
+	<a target="_blank" href="https://www.billetsalg.dk/Ticket/IMPACT%20FESTIVAL%202026/9545">TICKETS</a>
 </Layout>
+
+<style>
+	.hero_billede{
+		max-width: 100%;
+	}
+
+	h1{
+		color: #DC0C15;
+		font-size: 20px;
+		 display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+		text-align: center;
+		padding-bottom: 60px;
+    
+	}
+
+	a{
+		background-color: #DC0C15;
+		text-decoration: none;
+		color: white;
+		border: solid, white, 0.1rem;
+		padding: 20px 45px;
+		border-radius: 2rem;
+
+		display: flex;
+		justify-content: center;
+	}
+</style>
