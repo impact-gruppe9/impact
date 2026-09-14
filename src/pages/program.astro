@@ -1,6 +1,94 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
+
+<Layout>
+  <div class="program-page">
+    <h1>PROGRAM</h1>
+    <div class="categories"><span>ALL</span> <span>MUSIC</span> <span>WORKSHOPS</span> <span>ART</span> <span>TALKS</span></div>
+
+    <div class="days"><span class="active">FRIDAY</span> <span>SATURDAY</span></div>
+    <div class="program-event">
+      <div class="event-place"><h2>TRIFOLIUM</h2> <p>15.00</p></div>
+      <div class="line"></div>
+      <div class="event-description"><h2>FESTIVAL OPENING</h2> <p>The gates open, along with all festival areas — workshops, food court, art, exhibitions and poetry. Come inside, grab a drink, and settle in.</p></div>
+    </div>
+  </div>
+</Layout>
+<style>
+  .program-page {
+    width: 100%;
+
+    position: relative;
+    top: 15%;
+  }
+  h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 120px;
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -6px;
+  }
+
+  .categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 55px;
+  }
+  .categories span {
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 8px 23px;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .days {
+    display: flex;
+    gap: 28px;
+    margin-top: 85px;
+    margin-bottom: 75px;
+    margin-left: 130px;
+  }
+  .days span {
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: -2px;
+  }
+  .days .active {
+    color: #e30613;
+  }
+  .days span:not(.active) {
+    color: #aaa;
+  }
+  .program-event {
+    display: grid;
+    grid-template-columns: 300px 1px 1fr;
+    column-gap: 100px;
+    max-width: 900px;
+    margin-left: 130px;
+  }
+  .event-place h2,
+  .event-description h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 900;
+  }
+  .event-place p {
+    margin: 2px 0 0;
+    font-size: 20px;
+  }
+  .line {
+    width: 1px;
+    height: 115px;
+    background: black;
+  }
+  .event-description p {
+    max-width: 500px;
+    margin: 3px 0 0;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+</style>
