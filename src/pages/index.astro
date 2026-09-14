@@ -1,59 +1,62 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
 import Program from "../components/program.astro";
-
-
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-
-
-
-
-
 <Layout>
-	<img class="hero_billede" src="/src/img/LOGO+png+red.webp" alt="">
-	<h1>MUSIC // ART // TALKS // WORKSHOP // FOOD <br> DESIGNED TO INCREASE OUR IMPACT</h1>
-	<a target="_blank" href="https://www.billetsalg.dk/Ticket/IMPACT%20FESTIVAL%202026/9545">TICKETS</a>
+  <div class="hero_billeder">
+    <img class="hero_billede" src="/src/img/LOGO+png+red.webp" alt="" />-
+    <img class="placeholder_forside" src="/src/img/impact_forside.webp" alt="" />
+  </div>
 </Layout>
-
+<h1>MUSIC // ART // TALKS // WORKSHOP // FOOD <br /> DESIGNED TO INCREASE OUR IMPACT</h1>
+<a target="_blank" href="https://www.billetsalg.dk/Ticket/IMPACT%20FESTIVAL%202026/9545">TICKETS</a>
 
 <style>
-	.hero_billede{
-		max-width: 80%;
-		display: block;
-    	margin: 0 auto;
-	
-	}
+  .hero_billede {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-	h1{
-		color: #DC0C15;
-		font-size: 20px;
-		 display: flex;
-    	flex-direction: column;
-    	justify-content: center;
-    	align-items: center;
-		text-align: center;
-		padding-bottom: 60px;
-    
-	}
+  .placeholder_forside {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
 
-	a{
-		background-color: #DC0C15;
-		text-decoration: none;
-		color: white;
-		border: solid, white, 0.1rem;
-		padding: 20px 45px;
-		border-radius: 2rem;
+  h1 {
+    color: #dc0c15;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 60px;
+  }
 
-		display: block;
-    	margin: 0 auto;
-    	width: 110px;
-    	height: 25px;
-		text-align: center;
-		align-items: center;
-	}
+  a {
+    background-color: #dc0c15;
+    text-decoration: none;
+    color: white;
+    border: solid, white, 0.1rem;
+    padding: 20px 45px;
+    border-radius: 2rem;
+
+    display: block;
+    margin: 0 auto;
+    width: 110px;
+    height: 25px;
+    text-align: center;
+    align-items: center;
+  }
 </style>
