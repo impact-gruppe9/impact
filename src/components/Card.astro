@@ -2,6 +2,10 @@
 const { title, bgimage } = Astro.props;
 ---
 
+<!-- ---
+const { title, bgimage } = Astro.props;
+---
+
 <article style=`background-image: url(img/${bgimage})`>
   <h2>{title}</h2>
 </article>
@@ -19,5 +23,32 @@ const { title, bgimage } = Astro.props;
     color: #dc0c15;
     font-size: 35px;
     font-family: inter;
+  }
+</style> -->
+<article style={`background-image: url('/img/${bgimage}')`}>
+  <h2>{title}</h2>
+</article>
+
+<style>
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    aspect-ratio: 1.55;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+  }
+
+  h2 {
+    color: #dc0c15;
+    font-size: 35px;
+    font-family: Inter, sans-serif;
+    text-align: center;
   }
 </style>
