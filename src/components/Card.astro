@@ -2,45 +2,22 @@
 const { title, bgimage } = Astro.props;
 ---
 
-<article style=`background-image: url{images/${bgimage}}`>
+<article style=`background-image: url(img/${bgimage})`>
   <h2>{title}</h2>
 </article>
 
-<!-- nedenstående skal sættes ind på index.astro
+<style>
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    background-size: cover;
+  }
 
---- 
-import Card from "..components/Card.astro";
----
-
-
-
-<section>
-    <Card 
-    title="PROGRAM"
-    bgimage="" 
-    />
-    
-    <Card 
-    title="TALKS"
-    bgimage="" 
-    />
-    
-    <Card 
-    title="WORKSHOPS"
-    bgimage="" 
-    />
-    
-    <Card 
-    title="MUSIC"
-    bgimage="" 
-    />
-    
-    <Card 
-    title="ART"
-    bgimage="" 
-    />
-    
-</section>
-
--->
+  h2 {
+    color: #dc0c15;
+    font-size: 35px;
+    font-family: inter;
+  }
+</style>
