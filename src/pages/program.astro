@@ -5,22 +5,38 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
   <div class="program-page">
     <h1>PROGRAM</h1>
-    <div class="categories"><span>ALL</span> <span>MUSIC</span> <span>WORKSHOPS</span> <span>ART</span> <span>TALKS</span></div>
+    <div class="categories">
+      <button style="cursor: pointer;">ALL</button>
+      <button style="cursor: pointer;">MUSIC</button>
+      <button style="cursor: pointer;">WORKSHOPS</button>
+      <button style="cursor: pointer;">ART</button>
+      <button style="cursor: pointer;">TALKS</button>
+    </div>
 
     <div class="days"><span class="active">FRIDAY</span> <span>SATURDAY</span></div>
     <div class="program-event">
       <div class="event-place"><h2>TRIFOLIUM</h2> <p>15.00</p></div>
       <div class="line"></div>
       <div class="event-description"><h2>FESTIVAL OPENING</h2> <p>The gates open, along with all festival areas — workshops, food court, art, exhibitions and poetry. Come inside, grab a drink, and settle in.</p></div>
+
+      <div class="event-place"><h2>WORKSHOP AREA</h2> <p>15.00</p></div>
+      <div class="line"></div>
+      <div class="event-description">
+        <h2>WORKSHOP: SABOT</h2>
+        <p>Make your own keychain from otherwise wasted material (the shells from the Oyster Bar) in a space made for transformation and experimentation with founder Mé Kjærgaard and team.</p>
+      </div>
     </div>
   </div>
 </Layout>
 <style>
+  span {
+    background-color:;
+  }
+
   .program-page {
     width: 100%;
-
-    position: relative;
-    top: 15%;
+    padding-top: 120px;
+    padding-bottom: 80px;
   }
   h1 {
     margin: 0;
@@ -38,12 +54,19 @@ import Layout from "../layouts/Layout.astro";
     gap: 60px;
     margin-top: 55px;
   }
-  .categories span {
+  .categories button {
     border: 1px solid black;
     border-radius: 30px;
     padding: 8px 23px;
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 200;
+    background-color: white;
+  }
+
+  .categories button:hover {
+    background-color: #e30613;
+    color: white;
+    transition: 0.5s;
   }
   .days {
     display: flex;
